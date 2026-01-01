@@ -1,0 +1,35 @@
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.btn {
+  background-color: gray;
+  color: black;
+  border-radius: 10px;
+  transition: 3s;
+}
+.btn:hover {
+  background-color: black;
+  border: 1px solid grey;
+  color: grey;
+  transition: 3s;
+}
+#contactBtn{
+  background-color: #F5CF65;
+  color: black;
+  transition: 3s;
+
+
+
+}
+#contactBtn:hover{
+  background-color: black;
+  color: #F5CF65;
+  transition: 3s;
+  border: 1px solid #F5CF65
+
+
+
+
+}

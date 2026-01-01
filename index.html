@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio, projects, contact, and resume">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--accent:#FFD166}
+    body{font-family:'Vazirmatn',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    .hero-bg{background-image:linear-gradient(180deg,rgba(0,0,0,0.45),rgba(0,0,0,0.6)), url(image.png);background-size:cover;background-position:center;background-attachment: fixed;}
+    .glass{backdrop-filter:blur(6px);background-color:rgba(255,255,255,0.04)}
+    ::selection{background:var(--accent);color:#111827}
+    a{transition:all .18s}
+  </style>
+</head>
+<body class="bg-[#0b0b0c] text-gray-100 antialiased leading-relaxed">
+  <!-- NAV -->
+  <header class="fixed w-full z-50 bg-[#0b0b0c]/90 backdrop-blur">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="#" class="flex items-center gap-3">
+          <img src="image.png" alt="Profile photo" class="w-10 h-10 rounded-lg object-cover">
+          <span class="hidden md:block font-semibold text-lg">Your Name</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <button id="pr">Projects</button>
+        <button id="sk">Skills</button>
+        <button id="ex">Experience</button>
+        <button id="contactBtn" class="px-4 py-2 rounded-full bg-[var(--accent)] text-black font-semibold shadow">Contact</button>
+      </div>
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 glass rounded-lg">Menu</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-32">
+    <!-- HERO -->
+    <section class="hero-bg min-h-[72vh] flex items-center">
+      <div class="max-w-7xl mx-auto px-6 w-full">
+        <div class="flex flex-col lg:flex-row items-center gap-10">
+          <div class="lg:w-1/2 text-left">
+            <h1 class="text-4xl md:text-6xl font-extrabold">Portfolio & Resume</h1>
+            <p class="mt-4 text-gray-300 max-w-2xl">
+              Showcase of projects, skills, experiences, and contact information.
+            </p>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img loading="lazy" src="image.png" alt="hero" class="w-full h-80 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-bold text-left mb-6">Projects</h2>
+      <p class="text-gray-400 text-sm mb-6">List of completed projects with descriptions and links.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-[#0f0f10] rounded-xl overflow-hidden shadow-lg border border-gray-800">
+          <img loading="lazy" src="image.png" alt="Project 1" class="w-full h-52 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-bold">Project 1</h3>
+            <p class="text-sm text-gray-300 mt-2">Project description goes here.</p>
+            <p class="text-sm text-gray-300 mt-2">Built with: Example Tech</p>
+            <div class="mt-4 flex justify-between items-center">
+              <button class="btn"><a href="#" class="text-sm underline">View Project</a></button>
+              <span class="font-semibold">Year: 2025</span>
+            </div>
+          </div>
+        </article>
+        <article class="bg-[#0f0f10] rounded-xl overflow-hidden shadow-lg border border-gray-800">
+          <img loading="lazy" src="image.png" alt="Project 2" class="w-full h-52 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-bold">Project 2</h3>
+            <p class="text-sm text-gray-300 mt-2">Project description goes here.</p>
+            <p class="text-sm text-gray-300 mt-2">Built with: Example Tech</p>
+            <div class="mt-4 flex justify-between items-center">
+              <button class="btn"><a href="#" class="text-sm underline">View Project</a></button>
+              <span class="font-semibold">Year: 2025</span>
+            </div>
+          </div>
+        </article>
+        <article class="bg-[#0f0f10] rounded-xl overflow-hidden shadow-lg border border-gray-800">
+          <img loading="lazy" src="image.png" alt="Project 3" class="w-full h-52 object-cover">
+          <div class="p-6 text-left">
+            <h3 class="text-lg font-bold">Project 3</h3>
+            <p class="text-sm text-gray-300 mt-2">Project description goes here.</p>
+            <p class="text-sm text-gray-300 mt-2">Built with: Example Tech</p>
+            <div class="mt-4 flex justify-between items-center">
+              <button class="btn"><a href="#" class="text-sm underline">View Project</a></button>
+              <span class="font-semibold">Year: 2025</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-[#050506] py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-left mb-4">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div class="text-center p-4 bg-[#0b0b0c] rounded-lg"><img src="image.png" width="50px" height="50px"><span>Your skill</span></div>
+          <div class="text-center p-4 bg-[#0b0b0c] rounded-lg"><img src="image.png" width="50px" height="50px"><span>Your skill</span></div>
+          <div class="text-center p-4 bg-[#0b0b0c] rounded-lg"><img src="image.png" width="50px" height="50px"><span>Your skill</span></div>
+          <div class="text-center p-4 bg-[#0b0b0c] rounded-lg"><img src="image.png" width="50px" height="50px"><span>Your skill</span></div>
+          <div class="text-center p-4 bg-[#0b0b0c] rounded-lg"><img src="image.png" width="50px" height="50px"><span>Your skill</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="max-w-7xl mx-auto px-6 py-16 text-center">
+      <h2 class="text-2xl font-bold text-left mb-4">Experience</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-400">
+        <div>
+          <h4 class="font-semibold text-white">Date Range 1</h4>
+          <p>Description of achievement or experience 1.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white">Date Range 2</h4>
+          <p>Description of achievement or experience 2.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-[#060607] py-16 flex flex-col items-center gap-4">
+      <a href="#"><img src="image.png" width="100px" height="100px" alt="Email"></a>
+      <a href="#"><img src="image.png" width="100px" height="100px" alt="Telegram"></a>
+      <a href="#"><img src="image.png" width="145px" height="145px" alt="Github"></a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#050506] border-t border-gray-800 py-8">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6 items-center text-sm text-gray-400">
+        <div>© 2025 Your Name - Portfolio & Resume</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', ()=> mobileMenu?.classList.toggle('hidden'));
+
+    // Scroll to sections
+    document.getElementById('contactBtn')?.addEventListener('click', ()=>{document.getElementById('contact').scrollIntoView({behavior:'smooth'});});
+    document.getElementById('ex')?.addEventListener('click', ()=>{document.getElementById('experience').scrollIntoView({behavior:'smooth'});});
+    document.getElementById('sk')?.addEventListener('click', ()=>{document.getElementById('skills').scrollIntoView({behavior:'smooth'});});
+    document.getElementById('pr')?.addEventListener('click', ()=>{document.getElementById('projects').scrollIntoView({behavior:'smooth'});});
+
+    // Disable right-click
+    document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  </script>
+</body>
+</html>
