@@ -13,9 +13,4 @@ This is a personal portfolio and resume website template. It is designed to show
 - Smooth scrolling between sections
 - Mobile-friendly navigation menu
 
-## Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
 
